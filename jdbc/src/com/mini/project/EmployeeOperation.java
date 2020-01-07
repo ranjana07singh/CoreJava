@@ -7,9 +7,9 @@ import com.cjc2.DatabaseOperation;
 
 public class EmployeeOperation {
 	Scanner sc = new Scanner(System.in);
-	Employee emp = new Employee();
+	
 	public  Employee setEmployee(){
-		
+		Employee emp = new Employee();
 		
 		System.out.println("enter id");
 		emp.setId(sc.nextInt());
@@ -24,13 +24,14 @@ public class EmployeeOperation {
 	}
 
 	public Employee getemployeeDtails(){
-		
+		Employee emp = new Employee();
 		System.out.println("enter employee id:");
 		int empId=sc.nextInt();
 		emp.setId(empId);
 		return emp;
 	}
 	public Employee updateEmployee(){
+		Employee emp = new Employee();
 		DatabaseOperation db= new DatabaseOperation();
 		 System.out.println("Enter employee ID: ");
 		 int empId = sc.nextInt();
@@ -70,6 +71,7 @@ public class EmployeeOperation {
 	}
 	
 	public Employee deleteEmployee(){
+		Employee emp = new Employee();
 		 System.out.println("Enter employee ID: ");
 		 int empId = sc.nextInt();
 		  emp.setId(empId);
